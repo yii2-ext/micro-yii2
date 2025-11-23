@@ -6,3 +6,26 @@ protected/runtime/*
 protected/data/*.db
 themes/classic/views/
 .idea
+# mac ds_store (if present)
+.DS_Store
+# phpunit (if present)
+.phpunit.cache
+.phpunit.result.cache
+phpunit.xml*
+
+# vagrant (if present)
+.vagrant
+
+# vendor
+vendor
+
+# vscode project (if present)
+.vscode
+
+# windows thumbnail cache (if present)
+Thumbs.db
+
+# zend studio for eclipse project (if present)
+.buildpath
+.project
+.settings
