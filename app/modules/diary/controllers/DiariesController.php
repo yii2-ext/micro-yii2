@@ -2,8 +2,9 @@
 
 namespace base\modules\diary\controllers;
 
-use yii\rest\ActiveController as Controller;
 use yii\filters\Cors;
+use yii\web\Response;
+use yii\rest\ActiveController as Controller;
 
 
 /**
@@ -28,7 +29,13 @@ class DiariesController extends Controller
     public function behaviors()
     {
         $parentBehaviors = parent::behaviors();
+        // Return as JSON
+        $parentBehaviors['contentNegotiator']['formats'] = [
+            'application/json' => Response::FORMAT_JSON,
+        ];
+
         unset($parentBehaviors['rateLimiter']);
+        // Add Cors
         return array_merge([
             'cors' => [
                 'class' => Cors::className(),
@@ -81,6 +88,8 @@ class DiariesController extends Controller
                     ],
                 ],
             ],
+            
+
         ], $parentBehaviors);
     }
 
