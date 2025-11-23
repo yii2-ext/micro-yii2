@@ -1,11 +1,19 @@
 {
+  "name": "sg43/micro-yii2",
+  "type": "project",
+  "description": "Yii2 with micro RESTful API",
+  "minimum-stability": "dev",
+  "license": "BSD-2-Clause",
   "require": {
-    "php": ">=7.4.0",
-    "yiisoft/yii2": "~2.0.5"
+    "php": ">=8.1",
+    "yiisoft/yii2": "^2.0.53|^22"
   },
   "autoload": {
     "psr-4": {
-      "base\\": ["app/controllers","app/modules"]
+      "base\\": [
+        "app/controllers",
+        "app/modules"
+      ]
     }
   },
   "repositories": [
