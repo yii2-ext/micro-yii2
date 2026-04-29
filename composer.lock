@@ -138,22 +138,23 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-framework.git",
-                "reference": "4655ce6a4d01452df9bf2146658a15cef6d35766"
+                "reference": "b63b809a37541652f0018a7932acbaaa392267e6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/4655ce6a4d01452df9bf2146658a15cef6d35766",
-                "reference": "4655ce6a4d01452df9bf2146658a15cef6d35766",
+                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/b63b809a37541652f0018a7932acbaaa392267e6",
+                "reference": "b63b809a37541652f0018a7932acbaaa392267e6",
                 "shasum": ""
             },
             "require": {
-                "cebe/markdown": "~1.0.0 | ~1.1.0 | ~1.2.0",
-                "ext-ctype": "*",
+                "cebe/markdown": "~1.2.0",
                 "ext-mbstring": "*",
-                "ezyang/htmlpurifier": "^4.17",
-                "lib-pcre": "*",
-                "php": ">=8.1",
+                "ezyang/htmlpurifier": "^4.19",
+                "php": ">=8.3",
                 "yiisoft/yii2-composer": "~2.0.4"
+            },
+            "suggest": {
+                "yiisoft/yii2-jquery": "Provides the jQuery implementation of the client-side script layer (ActiveForm, GridView, CheckboxColumn, Captcha, all built-in validators)."
             },
             "bin": [
                 "yii"
@@ -163,9 +164,23 @@
                 "foxy": true
             },
             "autoload": {
+                "files": [
+                    "requirements/YiiRequirementChecker.php"
+                ],
                 "psr-4": {
                     "yii\\": ""
-                }
+                },
+                "classmap": [
+                    "Yii.php"
+                ],
+                "exclude-from-classmap": [
+                    "/caching/migrations/",
+                    "/i18n/migrations/",
+                    "/log/migrations/",
+                    "/rbac/migrations/",
+                    "/web/migrations/",
+                    "/requirements/YiiRequirementChecker.php"
+                ]
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -245,7 +260,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-09-04T21:30:36+00:00"
+            "time": "2026-04-26T18:38:31+00:00"
         },
         {
             "name": "yiisoft/yii2-composer",
@@ -253,20 +268,24 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-composer.git",
-                "reference": "e3c0eac06e0f1276fcfb2cb95a393336dd8300f1"
+                "reference": "495ec64ac810bf45398a78a89d7e507c83b725f2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-composer/zipball/e3c0eac06e0f1276fcfb2cb95a393336dd8300f1",
-                "reference": "e3c0eac06e0f1276fcfb2cb95a393336dd8300f1",
+                "url": "https://api.github.com/repos/yiisoft/yii2-composer/zipball/495ec64ac810bf45398a78a89d7e507c83b725f2",
+                "reference": "495ec64ac810bf45398a78a89d7e507c83b725f2",
                 "shasum": ""
             },
             "require": {
-                "composer-plugin-api": "^1.0 | ^2.0"
+                "composer-plugin-api": "^2.0",
+                "php": ">=7.4"
             },
             "require-dev": {
-                "composer/composer": "^1.0 | ^2.0@dev",
-                "phpunit/phpunit": "<7"
+                "composer/composer": "^2.9.5",
+                "phpstan/phpstan": "^2.1",
+                "phpstan/phpstan-phpunit": "^2.0",
+                "phpunit/phpunit": "^9.6",
+                "yiisoft/yii2-coding-standards": "~3.0"
             },
             "default-branch": true,
             "type": "composer-plugin",
@@ -322,7 +341,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-02-13T20:59:51+00:00"
+            "time": "2026-02-09T14:25:08+00:00"
         }
     ],
     "packages-dev": [],
