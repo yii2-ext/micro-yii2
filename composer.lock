@@ -138,12 +138,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-framework.git",
-                "reference": "b63b809a37541652f0018a7932acbaaa392267e6"
+                "reference": "705d7d5105e61447ebb37c0c3c925412a33b5846"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/b63b809a37541652f0018a7932acbaaa392267e6",
-                "reference": "b63b809a37541652f0018a7932acbaaa392267e6",
+                "url": "https://api.github.com/repos/yiisoft/yii2-framework/zipball/705d7d5105e61447ebb37c0c3c925412a33b5846",
+                "reference": "705d7d5105e61447ebb37c0c3c925412a33b5846",
                 "shasum": ""
             },
             "require": {
@@ -260,7 +260,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-04-26T18:38:31+00:00"
+            "time": "2026-07-04T12:04:40+00:00"
         },
         {
             "name": "yiisoft/yii2-composer",
@@ -268,12 +268,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/yii2-composer.git",
-                "reference": "495ec64ac810bf45398a78a89d7e507c83b725f2"
+                "reference": "0bccab6cb3a925636466f8590575ea34cec7683e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/yii2-composer/zipball/495ec64ac810bf45398a78a89d7e507c83b725f2",
-                "reference": "495ec64ac810bf45398a78a89d7e507c83b725f2",
+                "url": "https://api.github.com/repos/yiisoft/yii2-composer/zipball/0bccab6cb3a925636466f8590575ea34cec7683e",
+                "reference": "0bccab6cb3a925636466f8590575ea34cec7683e",
                 "shasum": ""
             },
             "require": {
@@ -341,7 +341,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-02-09T14:25:08+00:00"
+            "time": "2026-07-03T01:15:29+00:00"
         }
     ],
     "packages-dev": [],

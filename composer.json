@@ -21,6 +21,9 @@
       "url": "https://asset-packagist.org"
     }
   ],
+  "scripts": {
+    "start": "php -S 127.0.0.1:8080"
+  },
   "config": {
     "allow-plugins": {
       "yiisoft/yii2-composer": true
