@@ -1,11 +1,11 @@
 <?php
 
-namespace base\modules\diary;
+namespace diary\modules\diary;
 
 /**
  * Class Module
  * Yii2 default Module init class
- * @package base\modules\diary
+ * @package diary\modules\diary
  */
 class Module extends \yii\base\Module
 {

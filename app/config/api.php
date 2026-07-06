@@ -8,17 +8,21 @@
 return [
     'id' => 'diary-api',
 
-    'basePath' => realpath(__DIR__ . '../'),
+    'basePath' => realpath(__DIR__ . '/../'),
 
     'aliases' => [
-        '@base' => realpath(__DIR__.'/../'),
+        '@diary' => realpath(__DIR__.'/../'),
     ],
 
     'defaultRoute' => 'diary/diaries',
 
+    'controllerMap' => [
+        'diaries' => 'diary\modules\diary\controllers\DiariesController',
+    ],
+
     'modules' => [
       'diary' => [
-          'class' => 'base\modules\diary\Module',
+          'class' => 'diary\modules\diary\Module',
       ]
     ],
 
@@ -31,7 +35,7 @@ return [
 
         'db' => [
             'class' => 'yii\db\Connection',
-            'dsn' => 'sqlite:@base/database/diary.db',
+            'dsn' => 'sqlite:@diary/database/diary.db',
         ],
 
         'urlManager' => [
@@ -41,7 +45,7 @@ return [
             'rules' => [
                 [
                     'class' => 'yii\rest\UrlRule',
-                    'controller' => 'diary/diaries'
+                    'controller' => 'diaries'
                 ],
             ],
         ],

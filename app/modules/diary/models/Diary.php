@@ -1,12 +1,12 @@
 <?php
 
-namespace base\modules\diary\models;
+namespace diary\modules\diary\models;
 
 use yii\db\ActiveRecord;
 
 /**
  * Class Diary - Represent table "diary" on database
- * @package base\modules\diary\models
+ * @package diary\modules\diary\models
  */
 class Diary extends ActiveRecord
 {
@@ -25,6 +25,15 @@ class Diary extends ActiveRecord
     {
         return [
           [['name','telephone'],'required'],
+        ];
+    }
+
+    public function fields()
+    {
+        return [
+            'id',
+            'name',
+            'telephone',
         ];
     }
 }
